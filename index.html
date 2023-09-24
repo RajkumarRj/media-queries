@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .top{
+            width: 100%;
+            height: 30vh;
+            /* min-width: 600px; */
+            background-color:rgb(45, 43, 43);
+        }
+        .bottom{
+            width: 100%;
+            height: 70vh;
+            /* min-width: 600px;     */
+            background-color:yellow;
+        }
+        img{
+            width: 350px;
+            height: 550px;
+            position: absolute;
+            left: 27%;
+            top:18%;
+        }
+        @media (max-width:600px){
+            img{
+            width: 150px;
+            height: 400px;
+            position: absolute;
+            left: 15%;
+            top:22%;
+            }
+        }
+        @media (min-width:601px) and (max-width:992px){
+            img{
+            width: 250px;
+            height: 550px;
+            position: absolute;
+            left: 10%;
+            top:22%;
+            }
+        }
+        @media (min-width:993px){
+            img{
+            width: 300px;
+            height: 500px;
+            position: absolute;
+            left: 30%;
+            top:22%;
+            }
+        }
+        
+        article{
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            width: 30%;
+            text-align: center;
+        }
+        h1{
+            font-size:45px;
+        }
+        p,button{
+            line-height: 1.5rem;
+            font-weight:bold;
+        }
+        a{
+            color: black;
+        }
+        .link{
+            padding: 20px 0 10px 0;
+        }
+        button{
+            background-color: #001;
+            color: #f5f6f7;
+            padding: 5px;
+            width: 120px;
+        }
+        @media (max-width:600px){
+            article{
+            position: absolute;
+            left: 60%;
+            top: 35%;
+        }
+        h1{
+            font-size:25px;
+            font-weight: 900;
+        }
+        p{
+            font-size: 12px;
+            line-height:1.1rem;
+        }
+        button{
+            width: 70px;
+            padding: unset;
+            font-size: 10px;
+        }
+        }
+        @media (min-width:601px) and (max-width:992px){
+            article{
+                top: 35%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="bottom">
+        <img src="coffee.webp" alt="coffee">
+        <article>
+            <h1>Certified Coffee Courses</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod perferendis numquam enim exercitationem, mollitia ducimus necessitatibus vel est, nam et illo laboriosam dicta. Tempora ratione maxime fugiat dolor eaque id?</p>
+            <p class="link">image from  <a href="#">Freepik</a></p>
+
+            <button type="submit">Learn more</button>
+        </article>
+    </div>
+</body>
+</html>
